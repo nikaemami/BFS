@@ -47,6 +47,6 @@ def BFS(final, s, n, obstacles):
         return(final)
 ```
 
-
+By using the BFS algorithm, the shortest path between points in the n-dimensional space can be found recursively.
 
 
