@@ -25,26 +25,10 @@ def find_children(v):
     return(children)
 ```
 
-Next, this function is used in the main **bfs** function, as below:
+Next, this function is used in the main **bfs** function.
 
 ```ruby
-def BFS(final, s, n, obstacles):
- 
-        visited = [False] * (2 ** n)
-        queue = []
-        queue.append(s)
-        visited[s] = True
- 
-        while queue:
-            s = queue.pop(0)
-            final.append(s)
- 
-            children = find_children(s)
-            for i in children:
-                if ((visited[i] == False) and (i not in obstacles)):
-                    queue.append(i)
-                    visited[i] = True
-        return(final)
+def BFS(final, s, n, obstacles)
 ```
 
 By using the BFS algorithm, the shortest path between points in the n-dimensional space can be found recursively.
